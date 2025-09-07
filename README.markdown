@@ -7,11 +7,9 @@ This project builds a machine learning model to predict insurance premiums based
 ```
 insurance-premium-prediction/
 ├── data/
-│   └── insurance_dataset.csv  # Place downloaded dataset here
+│   └── train.csv  # Place downloaded dataset here
 ├── models/
 │   └── best_model.pkl        # Trained model (generated after training)
-├── notebooks/
-│   └── eda_and_training.ipynb  # EDA, preprocessing, and model experiments
 ├── src/
 │   ├── preprocess.py         # Data preprocessing functions
 │   ├── train.py              # Model training and MLflow logging
@@ -38,8 +36,8 @@ insurance-premium-prediction/
 ## Setup Instructions
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/insurance-premium-prediction.git
-   cd insurance-premium-prediction
+   git clone https://github.com/PriyaArunKannan/Python_Insurance.git
+   cd insurance
    ```
 
 2. **Install Dependencies**:
@@ -48,10 +46,9 @@ insurance-premium-prediction/
    ```
 
 3. **Download Dataset**:
-   - Download the dataset from the provided link and extract `insurance_dataset.csv` to the `data/` folder.
+   - Download the dataset from the provided link and extract `train.csv` to the `data/` folder.
 
 4. **Run EDA and Training** (optional, for experimentation):
-   - Open `notebooks/eda_and_training.ipynb` in Jupyter Notebook for interactive EDA and model training.
    - Alternatively, run:
      ```bash
      python src/train.py
@@ -95,8 +92,7 @@ seaborn
 
 ## Usage
 1. **EDA and Model Training**:
-   - Use `notebooks/eda_and_training.ipynb` to explore the dataset and experiment with models.
-   - Run `src/train.py` to train models and select the best one based on RMSE, MAE, R², and RMSLE.
+    - Run `src/train.py` to train models and select the best one based on RMSE, MAE, R², and RMSLE.
 
 2. **Real-Time Predictions**:
    - Launch the Streamlit app (`streamlit run app.py`).
@@ -142,6 +138,3 @@ This project is licensed under the MIT License. The dataset is synthetic and pro
 
 ## Contributing
 Feel free to open issues or submit pull requests for improvements. For major changes, please discuss in an issue first.
-
-## Contact
-For questions, contact [your-email@example.com] or open an issue on GitHub.
